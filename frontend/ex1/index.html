@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-dark bg-dark text-light">
+            Formulario de Venda de Medicamento
+        </nav> 
+    </header>
+    <main class="container">
+        <form class="row mt-4">
+            <div class="col-md-4">
+                <header class="p-2 text-light bg-secondary">
+                    Dados Medico
+                </header>
+                <div class="p-2">
+                    <div class="form-group">
+                        <label for="crmMed">CRM do Medico</label>
+                        <input class="form-control" type="text" name="crmMed" 
+                        placeholder="Digite o CRM do Medico" id="crmMed">
+                    </div>
+                    <div class="form-group">
+                        <label for="nomeMed">Nome do Medico</label>
+                        <input class="form-control" type="text" name="nomeMed" 
+                        placeholder="Digite o nome do Medico" id="nomeMed">
+                    </div>
+                    <div class="form-group">
+                        <label for="dataReceita">Data da Receita</label>
+                        <input class="form-control" type="date" name="dataReceita" 
+                        id="dataReceita">
+                    </div>
+                    <div class="form-group">
+                        <label for="qtdCaixa">Quantidade de Caixas</label>
+                        <input class="form-control" type="number" name="qtdCaixa" 
+                        placeholder="Digite a Quantidade de Caixas" id="qtdCaixa">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <header class="p-2 text-light bg-secondary">
+                    Dados Paciente
+                </header>
+                <div class="p-2">
+                    <div class="form-group">
+                        <label for="nomePaci">Nome do Paciente</label>
+                        <input class="form-control" type="text" name="nomePaci" 
+                        placeholder="Digite o nome do Paciente" id="nomePaci">
+                    </div>
+                    <div class="form-group">
+                        <label for="cpfPaci">CPF do Paciente</label>
+                        <input class="form-control" type="text" name="cpfPaci" 
+                        placeholder="Digite o CPF do Paciente" id="cpfPaci">
+                    </div>
+                    <div class="form-group">
+                        <label for="dataNascPaci">Data de Nascimento do Paciente</label>
+                        <input class="form-control" type="date" name="dataNascPaci" 
+                        id="dataNascPaci">
+                    </div>
+                    <div class="form-group">
+                        <label for="sexoPaci">Sexo do Paciente</label>
+                        <select class="form-control" name="sexoPaci" id="sexoPaci">
+                            <option value="" disabled selected>Sexo</option>
+                            <option value="Masculino">Masculino</option>
+                            <option value="Feminino">Feminino</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="tipoEnvio">Tipo de Envio</label>
+                        <select class="form-control" name="tipoEnvio" id="tipoEnvio">
+                            <option value="" disabled selected>Tipo de Envio</option>
+                            <option value="anexarArquivo">Anexar Arquivo</option>
+                            <option value="whatsApp">WhatsApp</option>
+                            <option value="email">E-mail</option>
+                        </select>
+                    </div>
+                    <button class="btn btn-success" type="submit">Enivar Formulario</button>
+                </div>
+            </div>
+        </form>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" 
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" 
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" 
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" 
+    crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" 
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" 
+    crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
